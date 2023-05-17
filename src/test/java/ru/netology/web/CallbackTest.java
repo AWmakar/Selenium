@@ -41,7 +41,6 @@ class CallbackTest {
 
     @Test
     void shouldTestV3() {
-        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Валера");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79091558789");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
